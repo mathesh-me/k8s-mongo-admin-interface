@@ -1,6 +1,11 @@
-# MongoDB Admin Interface Deployment using Kubernetes 🚀
+![architecture-k8s-mongo-ui](https://github.com/mathesh-me/k8s-mondo-admin-interface/assets/144098846/1736534c-7f5d-4ad6-b96a-74dcf2b01777)# MongoDB Admin Interface Deployment using Kubernetes 🚀
 
 This Repository describes the deployment of a MongoDB Admin Interface using Kubernetes. The MongoDB Admin Interface is a web-based application that allows users to interact with a MongoDB database via Web Interface. This Web Inteface provides a user-friendly interface for performing common database operations such as querying, inserting, updating, and deleting data.
+
+## Architecture Diagram 📊
+
+![architecture-k8s-mongo-ui](https://github.com/mathesh-me/k8s-mondo-admin-interface/assets/144098846/2e95079f-302d-4a6f-b5d7-1e8c5d84889a)
+
 
 ## Architecture 🏗️
 
@@ -26,10 +31,6 @@ The architecture of the MongoDB Admin Interface deployment using Kubernetes is a
 - **Secrets:** We are using the secrets feature to store sensitive information like `username` and `password`.
 - **ConfigMap:** We are using ConfigMap to store the non-sensitive data in key-value pairs, In our case we are using it to store the `database URL`.
 - **PersistentVolume and PersistentVolumeClaim:** We are using PV and PVC to store the data in the database, So that if our pod goes down, the data will be safe.
-
-## Architecture Diagram 📊
-
-![Architecture]()
 
 ## Prerequisites 📋
 

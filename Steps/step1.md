@@ -1,5 +1,13 @@
 ### Steps to deploy Mern Application on Kubernetes
 
+Before we start with the deployment, We have to Create a Directory `/storage/mongo` in the minikube node to store the data of the database. We can do this by using the below command.
+
+```bash
+docker exec -it minikube bash
+sudo mkdir -p /storage/mongo
+exit
+```
+
 1. **Create a PersistentVolume and PersistentVolumeClaim for MongoDB**
 
 - Create a file named `pv.yaml` and add the below content.
@@ -322,7 +330,7 @@ kubectl get pvc
 - Now you can access the webapp using the `http://<Node-IP>:30111` URL.
 - But if You are used `minikube` to create the cluster, You have to follow the below method.
     - Install Socat using `yum install socat -y` command.
-    - Use `socat TCP4-LISTEN:8080 TCP4:192.168.49.2:30111 &` command to access the webapp.
+    - Use `socat TCP4-LISTEN:8080,fork,reuseaddr TCP4:192.168.49.2:30111 &` command to access the webapp.
 
 ### Result:
 

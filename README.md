@@ -1,4 +1,4 @@
-![architecture-k8s-mongo-ui](https://github.com/mathesh-me/k8s-mondo-admin-interface/assets/144098846/1736534c-7f5d-4ad6-b96a-74dcf2b01777)# MongoDB Admin Interface Deployment using Kubernetes 🚀
+# MongoDB Admin Interface Deployment using Kubernetes 🚀
 
 This Repository describes the deployment of a MongoDB Admin Interface using Kubernetes. The MongoDB Admin Interface is a web-based application that allows users to interact with a MongoDB database via Web Interface. This Web Inteface provides a user-friendly interface for performing common database operations such as querying, inserting, updating, and deleting data.
 

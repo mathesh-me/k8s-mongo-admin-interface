@@ -334,7 +334,13 @@ kubectl get pvc
 
 ### Result:
 
-// Will be Added
+**Use Username as `admin`, Password as `pass`**
+
+![Screenshot 2024-04-13 180419](https://github.com/mathesh-me/k8s-mongo-admin-interface/assets/144098846/24a2573a-3ee2-4607-a68e-4e0220eaa7e4)
+
+![Screenshot 2024-04-13 180522](https://github.com/mathesh-me/k8s-mongo-admin-interface/assets/144098846/f4117736-37ed-4b08-96e8-ddd9636a0e84)
+
+
 
 **That's it, We have successfully deployed the Mern Application on Kubernetes.**
 

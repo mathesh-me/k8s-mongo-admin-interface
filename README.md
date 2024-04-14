@@ -38,6 +38,40 @@ The architecture of the MongoDB Admin Interface deployment using Kubernetes is a
 - Kubernetes CLI `kubectl`
 - Knowledge of Kubernetes Pods, Deployment, Services, Secrets, ConfigMap, PersistentVolume, and PersistentVolumeClaim.
 
+## Usage 🛠️
+
+- Clone the Repository:
+
+```bash
+git clone
+```
+- Create a Directory `/storage/mongo` in the node where you are going to deploy the application.
+
+```bash
+mkdir -p /storage/mongo
+```
+- Change the directory to the cloned repository:
+
+```bash
+cd k8s-mongo-admin-interface
+```
+- Update the `pv.yaml` file with the node name where you are going to deploy the application.
+- Deploy the MongoDB Admin Interface using the following command:
+
+```bash
+kubectl apply -f .
+```
+- Check your Kubernetes Objects status using the following command:
+
+```bash
+kubectl get object_name
+```
+- Access the MongoDB Admin Interface using the NodePort Service IP and Port.
+
+```bash
+http://NodeIP:NodePort
+```
+
 ## Steps 📝
 
 | Step No | Document Link |

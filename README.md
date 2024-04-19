@@ -43,7 +43,7 @@ The architecture of the MongoDB Admin Interface deployment using Kubernetes is a
 - Clone the Repository:
 
 ```bash
-git clone
+git clone https://github.com/mathesh-me/k8s-mongo-admin-interface
 ```
 - Create a Directory `/storage/mongo` in the node where you are going to deploy the application.
 
